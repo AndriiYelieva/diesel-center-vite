@@ -6,7 +6,7 @@ Diesel Center is a specialized website dedicated to the repair of diesel injecto
 
 ## Demo
 
-You can view a demo version of my project at the following link: [Demo link] (https://andriiyelieva.github.io/diesel-center/).
+You can view a demo version of my project at the following link: [Demo link] (https://andriiyelieva.github.io/diesel-center-vite/).
 
 ## Technologies used.
 
