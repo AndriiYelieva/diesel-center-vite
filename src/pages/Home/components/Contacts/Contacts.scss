@@ -1,0 +1,35 @@
+@import "../../../../styles/main.scss";
+
+.contacts {
+  margin-top: 40px;
+
+  &__title {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  &__card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: $color-white-blue;
+    border-radius: 30px;
+    padding: 20px;
+
+    &__title {
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 20px;
+      text-align: left;
+    }
+  }
+
+  &__map {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}

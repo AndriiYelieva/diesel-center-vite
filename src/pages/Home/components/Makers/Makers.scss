@@ -1,0 +1,27 @@
+@import "../../../../styles/main.scss";
+
+.makers {
+  margin-top: 30px;
+
+  &__title {
+    // font-family: Akzidenz-Grotesk Pro;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  &__list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__card {
+    background-color: $color-white-blue;
+    border-radius: 30px;
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+  }
+}
