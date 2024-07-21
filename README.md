@@ -6,7 +6,7 @@ Diesel Center is a specialized website dedicated to the repair of diesel injecto
 
 ## Demo
 
-You can view a demo version of my project at the following link: [Demo link] (https://andriiyelieva.github.io/diesel-center-vite/).
+You can view a demo version of my project at the following link: [Demo link](https://andriiyelieva.github.io/diesel-center-vite/).
 
 ## Technologies used.
 
@@ -27,9 +27,9 @@ You can view a demo version of my project at the following link: [Demo link] (ht
 - Swiper: I use Swiper to create interactive carousels and horizontal blocks in my app.
 
 ## Sources. 
-- [Build a React app] (https://create-react-app.dev/) 
-- [JSONPlaceholder API] (https://jsonplaceholder.typicode.com/)
-- [JavaScript] (https://github.com/airbnb/javascript)
-- [TypeScript] (https://www.typescriptlang.org/)
+- [Build a React app](https://create-react-app.dev/) 
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
+- [JavaScript](https://github.com/airbnb/javascript)
+- [TypeScript](https://www.typescriptlang.org/)
 - [i18next](https://www.i18next.com/)
-- [Sass] (https://sass-lang.com/)
+- [Sass](https://sass-lang.com/)
