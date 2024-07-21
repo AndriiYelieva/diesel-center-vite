@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+## Diesel center
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Project Description**
 
-Currently, two official plugins are available:
+Diesel Center is a specialized website dedicated to the repair of diesel injectors of well-known brands such as Bosch, Siemens, Delphi and Denso. The site offers detailed information on services including diagnostics, repair and calibration of diesel injectors. Customers can learn about the modern technologies used in the repair, find contact details for consultations, and sign up for service online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
 
-## Expanding the ESLint configuration
+You can view a demo version of my project at the following link: [Demo link] (https://andriiyelieva.github.io/diesel-center/).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies used.
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: My web application is developed using the React library, which provides me with powerful capabilities for creating interactive interfaces.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- TypeScript: I use TypeScript to improve the quality of my code and make it more robust.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- JavaScript: I extend my interfaces with JavaScript to get additional functionality.
+
+- BEM (Block Element Modifier): I use the BEM methodology to better organize and manage CSS styles.
+
+- SCSS: I use SCSS to create stylish and well-structured styles for my application.
+
+- Redux and Redux Persist: I use Redux to efficiently manage the state of my application and Redux Persist to preserve that state after a reboot.
+
+- React Router DOM: I use React Router DOM to navigate between pages and create a friendly URL structure.
+
+- Swiper: I use Swiper to create interactive carousels and horizontal blocks in my app.
+
+## Sources. 
+- [Build a React app] (https://create-react-app.dev/) 
+- [JSONPlaceholder API] (https://jsonplaceholder.typicode.com/)
+- [JavaScript] (https://github.com/airbnb/javascript)
+- [TypeScript] (https://www.typescriptlang.org/)
+- [i18next](https://www.i18next.com/)
+- [Sass] (https://sass-lang.com/)
