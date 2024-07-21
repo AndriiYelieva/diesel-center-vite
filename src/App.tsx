@@ -5,7 +5,6 @@ import { Home, NotFound } from './pages';
 function App() {
   return (
     <BrowserRouter>
-
       <Routes>
         <Route path="/diesel-center-vite" element={<Home />} />
 

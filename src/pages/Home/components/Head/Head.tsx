@@ -16,7 +16,7 @@ export const Head = () => {
       <img
         src={picture}
         alt="injectors"
-        className="head__injectors injectors"
+        className="head__injectors"
       />
     </div>
   )
