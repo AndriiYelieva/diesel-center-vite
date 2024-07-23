@@ -26,11 +26,40 @@
     background-position: 90% 20%;
 
 
-    &--question {
+    &--summary {
+      all: unset;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+
       font-size: 13px;
       font-weight: 400;
       line-height: 13px;
       text-align: left;
+    }
+
+    &--question {
+      width: 210px;
+    }
+
+    &--button {
+      width: 30px;
+      height: 30px;
+      border: none;
+
+      background-color: inherit; 
+
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &--default {
+        background-image: url("../../../../images/icons/plus.svg");
+      }
+      
+      &--close {
+        background-image: url("../../../../images/icons/close.svg");
+
+      }
     }
 
     &--answer {

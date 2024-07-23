@@ -1,41 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./FAQ.scss";
+import classNames from 'classnames';
 
 const array = [
   {
     id: 1,
     title: "Як часто потрібно робити обслуговування форсунок",
-    descrtiprion: "Все залежить від регламенту, від заміноущільнених шайб форсунки, але в більшості від палива, на якому ви заправляєтесь.",
+    description: "Все залежить від регламенту, від заміноущільнених шайб форсунки, але в більшості від палива, на якому ви заправляєтесь.",
+    isShow: false,
   },
   {
     id: 2,
     title: "Який термін виконання роботи?",
-    descrtiprion: "1-3 дні виконання роботи, але також в залежності від об’єму роботи",
+    description: "1-3 дні виконання роботи, але також в залежності від об’єму роботи",
+    isShow: false,
   },
   {
     id: 3,
     title: "Який матеріал ви використовуєте?",
-    descrtiprion: "Ми використовуємо лише оригінальні деталі. Найчастіше це деталі системи common rail Denso.",
+    description: "Ми використовуємо лише оригінальні деталі. Найчастіше це деталі системи common rail Denso.",
+    isShow: false,
   },
 ]
 
 export const FAQ = () => {
+  const [isAnswers, setIsAnswers] = useState(array);
+
+  const handleShowAnswer = (index: number) => {
+    const newAnswers = [...isAnswers];
+
+    newAnswers[index].isShow = !newAnswers[index].isShow;
+    setIsAnswers(newAnswers);
+  }
+
   return (
     <section className="FAQ">
       <h1 className="FAQ__title">Найчастіші запитання</h1>
 
       <ul className="FAQ__list">
-        {array.map(card =>
-          <li className="FAQ__card" key={card.id}>
-            <p className="FAQ__card--question">
-              {card.title}
-            </p>
-            {/* <p className="FAQ__card--answer">
-              {card.descrtiprion}
-            </p> */}
-          </li>
-        )}
+        {isAnswers.map((card, index) => (
+          <details className="FAQ__card" key={card.id} open={card.isShow}>
+            <summary
+              className="FAQ__card--summary"
+              onClick={() => handleShowAnswer(index)}
+            >
+              <p className="FAQ__card--question">{card.title}</p>
+              <button
+                className={classNames(
+                  'FAQ__card--button',
+                  card.isShow ? 'FAQ__card--button--close' : 'FAQ__card--button--default'
+                )}
+              />
+            </summary>
+            <p className="FAQ__card--answer">{card.description}</p>
+          </details>
+        ))}
       </ul>
-    </section >
+    </section>
   )
 }
