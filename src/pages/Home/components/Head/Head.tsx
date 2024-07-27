@@ -10,7 +10,7 @@ export const Head = () => {
       <p className="head__subtitle" >Якісний сервіс форсунок для комерційних та легкових авто</p>
 
       <button className="head__button">
-        Безкоштовна консультація
+        <a href="tel:+380978404161" className="link__title">Безкоштовна консультація</a>
       </button>
 
       <img

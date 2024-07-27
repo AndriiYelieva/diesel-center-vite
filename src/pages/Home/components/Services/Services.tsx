@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Services.scss";
-import { Link } from '../Link/Link';
+import { Link } from '../../../../components/Link/Link';
 
 import diagnostics from "../../../../images/photos/Diagnostics_of_injectors.png";
 import dismantling from "../../../../images/photos/Dismantling.png";

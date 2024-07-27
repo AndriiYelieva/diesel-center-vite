@@ -25,6 +25,8 @@ const array = [
 
 export const FAQ = () => {
   const [isAnswers, setIsAnswers] = useState(array);
+  console.log(array);
+
 
   const handleShowAnswer = (index: number) => {
     const newAnswers = [...isAnswers];
@@ -39,8 +41,8 @@ export const FAQ = () => {
 
       <ul className="FAQ__list">
         {isAnswers.map((card, index) => (
-          <details className="FAQ__card" key={card.id} open={card.isShow}>
-            <summary
+          <div className="FAQ__card" key={card.id}>
+            <div
               className="FAQ__card--summary"
               onClick={() => handleShowAnswer(index)}
             >
@@ -51,9 +53,12 @@ export const FAQ = () => {
                   card.isShow ? 'FAQ__card--button--close' : 'FAQ__card--button--default'
                 )}
               />
-            </summary>
-            <p className="FAQ__card--answer">{card.description}</p>
-          </details>
+              {card.isShow}
+            </div>
+            {card.isShow && (
+              <p className="FAQ__card--answer">{card.description}</p>
+            )}
+          </div>
         ))}
       </ul>
     </section>

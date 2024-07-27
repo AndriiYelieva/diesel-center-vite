@@ -2,23 +2,23 @@ import React, { useEffect, useState } from 'react'
 import "./Header.scss";
 
 export const Header = () => {
-  const [menuVisible, setMenuVisible] = useState(false);
+  // const [menuVisible, setMenuVisible] = useState(false);
 
-  useEffect(() => {
-    if (menuVisible) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+  // useEffect(() => {
+  //   if (menuVisible) {
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'auto';
+  //   }
 
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [menuVisible]);
+  //   return () => {
+  //     document.body.style.overflow = 'auto';
+  //   };
+  // }, [menuVisible]);
 
-  const toggleMenu = () => {
-    setMenuVisible(prevMenuVisible => !prevMenuVisible);
-  };
+  // const toggleMenu = () => {
+  //   setMenuVisible(prevMenuVisible => !prevMenuVisible);
+  // };
 
   return (
     <header className="header">
