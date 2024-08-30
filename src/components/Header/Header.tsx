@@ -1,34 +1,34 @@
-import React, { useEffect, useState } from 'react'
 import "./Header.scss";
+import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 
-export const Header = () => {
-  // const [menuVisible, setMenuVisible] = useState(false);
+type Props = {
+  menuVisible: boolean;
+  setMenuVisible: (v: boolean) => void;
+}
 
-  // useEffect(() => {
-  //   if (menuVisible) {
-  //     document.body.style.overflow = 'hidden';
-  //   } else {
-  //     document.body.style.overflow = 'auto';
-  //   }
-
-  //   return () => {
-  //     document.body.style.overflow = 'auto';
-  //   };
-  // }, [menuVisible]);
-
-  // const toggleMenu = () => {
-  //   setMenuVisible(prevMenuVisible => !prevMenuVisible);
-  // };
-
+export const Header: React.FC<Props> = ({ menuVisible, setMenuVisible }) => {
   return (
-    <header className="header">
-      <button
-        className="header__logo"
+    <header
+      className={classNames("header", {
+        "header__background": menuVisible,
+      })}>
+      <Link
+        to="/diesel-center-vite/"
+        className={classNames("header__logo", {
+          "header__logo--default": !menuVisible,
+          "header__logo--white": menuVisible === true,
+        })}
       />
 
       <button
-        className="header__menu"
+        className={classNames("header__menu", {
+          "header__menu--default": !menuVisible,
+          "header__menu--white": menuVisible,
+        })}
+        onClick={() => setMenuVisible(!menuVisible)}
       />
+      
     </header>
   )
 }

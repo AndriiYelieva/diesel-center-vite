@@ -25,7 +25,7 @@ const array = [
 
 export const WhyUs = () => {
   return (
-    <section className="whyUs">
+    <section className="whyUs" id="why-us">
       <h1 className="whyUs__title">Чому ми?!</h1>
 
       <ul className="whyUs__list">

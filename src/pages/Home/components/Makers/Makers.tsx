@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react'
 import "./Makers.scss";
 import bosch from "../../../../images/icons/bosch.svg"
 import denso from "../../../../images/icons/denso.svg"
@@ -31,7 +29,7 @@ const array = [
 
 export const Makers = () => {
   return (
-    <section className="makers">
+    <section className="makers" id="makers">
       <h1 className="makers__title">Ремонт форсунок усіх виробників</h1>
 
       <ul className="makers__list">

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react'
 import "./Contacts.scss";
 import { Link } from 'react-router-dom';
@@ -6,7 +5,7 @@ import map from "../../../../images/photos/map.png"
 
 export const Contacts = () => {
   return (
-    <section className="contacts">
+    <section className="contacts" id="contacts">
       <h1 className="contacts__title">Контакти</h1>
 
       <div className="contacts__card">

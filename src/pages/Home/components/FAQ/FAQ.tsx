@@ -25,8 +25,6 @@ const array = [
 
 export const FAQ = () => {
   const [isAnswers, setIsAnswers] = useState(array);
-  console.log(array);
-
 
   const handleShowAnswer = (index: number) => {
     const newAnswers = [...isAnswers];

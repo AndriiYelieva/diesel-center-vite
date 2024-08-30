@@ -36,7 +36,7 @@ const array = [
 
 export const Services = () => {
   return (
-    <section className="services">
+    <section className="services" id="services">
       <h1 className="services__title">Послуги</h1>
       <ul className="services__list">
         {array.map(card =>

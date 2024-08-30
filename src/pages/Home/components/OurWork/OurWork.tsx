@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react'
 import "./OurWork.scss";
 
 const array = [
@@ -27,7 +25,7 @@ const array = [
 
 export const OurWork = () => {
   return (
-    <section className="ourWork">
+    <section className="ourWork" id="our-work">
       <h1 className="ourWork__title">Як ми працюємо</h1>
 
       <ul className="ourWork__list">

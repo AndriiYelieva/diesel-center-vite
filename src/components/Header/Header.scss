@@ -1,12 +1,21 @@
 @import "../../styles/main.scss";
 
 .header {
-  padding: 10px;
+  position: sticky;
+  padding: 10px 0;
+  padding: 0 10px;
 
+
+  z-index: 99 !important;
+  
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+  &__background {
+    background-color: $color-blue;
+  }
 
   &__logo {
     height: 40px;
@@ -17,9 +26,16 @@
     background-position: center;
     background-color: inherit;
     background-size: cover;
-    background-image: url("../../images/icons/logo.svg");
+    
+    &--default {
+      background-image: url("../../images/icons/logo.svg");
+    }
+    
+    &--white {
+      background-image: url("../../images/icons/logo-white.svg");
+    }
   }
-
+  
   &__menu {
     height: 25px;
     width: 25px;
@@ -27,6 +43,15 @@
 
     background-repeat: no-repeat;
     background-color: inherit;
-    background-image: url("../../images/icons/menu.svg");
+    
+    &--default {
+      background-image: url("../../images/icons/menu.svg");
+    }
+    
+    &--white {
+      height: 30px;
+      width: 30px;
+      background-image: url("../../images/icons/close-white.svg");
+    }
   }
 }

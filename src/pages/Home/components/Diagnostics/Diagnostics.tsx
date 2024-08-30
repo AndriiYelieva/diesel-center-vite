@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
 import "./Diagnostics.scss";
 import { Link } from '../../../../components/Link/Link';
