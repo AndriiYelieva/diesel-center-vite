@@ -7,6 +7,8 @@ type Props = {
   setMenuVisible: (v: boolean) => void;
 }
 
+// just kommit
+
 export const Header: React.FC<Props> = ({ menuVisible, setMenuVisible }) => {
   return (
     <header
